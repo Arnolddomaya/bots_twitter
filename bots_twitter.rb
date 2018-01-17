@@ -33,7 +33,6 @@ texte = "Et Un autre tweet, trop cool ! "
 #j'ai juste pris la liste des nom de mes camarades :@friends_pseudo au lieu de la liste des journaliste
 def tweet_journaliste(liste, texte)
   liste.each do |pseudo|
-    puts pseudo
     @client.update(texte+" "+pseudo)
   end
 end
